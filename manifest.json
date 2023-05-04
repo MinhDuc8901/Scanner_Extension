@@ -1,0 +1,60 @@
+{
+  "name": "My YT Bookmarks",
+  "version": "0.1.0",
+  "description": "Saving timestamps in YT videos",
+  "permissions": [
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/images/bookmark.png",
+        "assets/images/play.png",
+        "assets/images/delete.png",
+        "assets/images/save.png"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/images/ext-icon.png",
+      "24": "assets/images/ext-icon.png",
+      "32": "assets/images/ext-icon.png"
+    },
+    "default_title": "TEST",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}

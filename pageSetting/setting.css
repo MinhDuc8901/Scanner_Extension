@@ -1,0 +1,83 @@
+.header {
+    background-color: #62CDFF;
+    width: 100%;
+    height: 75px;
+    display: flex;
+}
+
+.header__logo {
+    color: #AA77FF;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.header__logo span {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 75px;
+}
+
+.header__tab--content {
+    height: 100%;
+}
+
+.tab__content {
+    display: flex;
+    list-style: none;
+    line-height: 75px;
+}
+
+.tab__content li {
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.tab__content li:hover {
+    cursor: pointer;
+    color: #FF5F9E;
+
+}
+
+.active {
+    color: #FF5F9E;
+}
+
+.active::after {
+    content: "";
+    width: 100%;
+    background-color: #FF5F9E;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.tab {
+    display: none;
+}
+
+.activeTab {
+    display: block;
+}
+
+.body {
+    margin-top: 30px;
+}
+
+.BlackListUrl__submit {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.BlackListWord__submit {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.Option__submit {
+    margin-top: 20px;
+    text-align: right;
+}

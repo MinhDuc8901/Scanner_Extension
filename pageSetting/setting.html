@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./setting.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo">
+                <span>Website Scan</span>
+            </div>
+            <div class="header__tab--content">
+                <ul class="tab__content">
+                    <li class="active tab_li" data-tab="tab1">Options</li>
+                    <li class="tab_li" data-tab="tab2">Black list url</li>
+                    <li class="tab_li" data-tab="tab3">Black list word</li>
+                    <li class="tab_li" data-tab="tab4">About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div class="tab1 tab activeTab">
+                <div class="Option">
+                    <div class="Option__title">
+                        <p>Lựa chọn độ tuổi</p>
+                    </div>
+                    <div class="Option__content">
+                        <input type="number" class="form-control" value="" />
+                    </div>
+                    <div class="Option__submit">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab2 tab">
+                <div class="BlackListUrl">
+                    <div class="BlackListUrl__title">
+                        <p>Vui lòng nhập những url không mong muốn truy cập vào đây ( URL cách nhau bởi dấu chấm phẩy)
+                        </p>
+                    </div>
+                    <div class="BlackListUrl__content">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="BlackListUrl__submit">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab3 tab">
+                <div class="BlackListWord">
+                    <div class="BlackListWord__title">
+                        <p>Vui lòng nhập những từ không mong muốn truy cập vào đây ( Từ cách nhau bởi dấu chấm phẩy)</p>
+                    </div>
+                    <div class="BlackListWord__content">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="BlackListWord__submit">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab4 tab">
+                Tab4
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="text/javascript" src="./setting.js"></script>
+
+</body>
+
+</html>
